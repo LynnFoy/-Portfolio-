@@ -14,19 +14,17 @@
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 <body>
-    <div id="progressbar"></div>
+<div id="progressbar"></div>
     <div id="scrollPath"></div>
     <section>
     <section id="banner">
         <div class="banner-text">
-            <h1>Gameuse-Développeuse Junior</h1>
-            <p>I play to win</p>
+            <h1>Développeuse Junior</h1>
             <div class="banner-btn">
                 <a href="https://www.linkedin.com/in/pauline-foy/"><span></span>LinkedIn</a>
                 <a href="https://github.com/LynnFoy"><span></span>Github</a>
             </div>
         </div>
-
     </section>
 
     <div id="sideNav">
@@ -37,6 +35,7 @@
                 <li><a href="#service">Projets</a></li>
                 <li><a href="#testimonial">Compétences</a></li>
                 <li><a href="#footer">Formations-Expériences</a></li>
+                <li><a href="#footer">Contact</a></li>
             </ul>
         </nav>
      </div>
@@ -87,10 +86,8 @@
                        <p>
                            <ul>
                                 <li>Jeux vidéos</li>
-                                <li>Beauté</li>
-                                <li>Relaxation asmr</li>
-                                <li>Ecouter de la musique</li>
-                                <li>La lecture</li>
+                                <li>Musique</li>
+                                <li>Lecture</li>
                            </ul>
                        </p>
                    </div>
@@ -227,23 +224,24 @@
                 <li><p>Boulangerie Paul</p></li>
             </ul>
          </div>
-        </div>     
+        </div> 
+        <div class="title-text">
+            <p>Contact</p>
         </div>
-            <script>
-            var scroll = new SmoothScroll('a[href*="#"]', {
-                speed: 500,
-                speedAsDuration: true
-            });
-            </script>
+        <div class="footer-row">
+        <div class="footer-right">
+            <p>lynn.f3003@gmail.com</p>
+            <p>0494/05.97.97</p>
+            </div>     
+        </div>
         </section>
-    </section>        
-    <script type="text/javascript">
-        let progress = document.getElementById('progressbar');
-        let totalHeight = document.body.scrollHeight - window.innerHeight;
-        window.onscroll = function(){
-            let progressHeight = (window.pageYOffset / totalHeight) * 100;
-            progress.style.height = progressHeight + "%";
-        }
-    </script>
+        <script type="text/javascript">
+            let progress = document.getElementById('progressbar');
+            let totalHeight = document.body.scrollHeight - window.innerHeight;
+            window.onscroll = function(){
+                let progressHeight = (window.pageYOffset / totalHeight) * 100;
+                progress.style.height = progressHeight + "%";
+            }
+        </script>
 </body>
 </html>
